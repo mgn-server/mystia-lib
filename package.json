@@ -1,0 +1,28 @@
+{
+  "name": "mystia-lib",
+  "version": "1.0.0",
+  "description": "Idéia: criar uma lib bot discord do zero sem vibe codar nem nada.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "npm run lint && npm run format && tsc",
+    "lint": "eslint src/*",
+    "format": "prettier . --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^25.0.10",
+    "@types/ws": "^8.18.1",
+    "discord-api-types": "^0.38.37",
+    "eslint": "^9.39.2",
+    "globals": "^17.1.0",
+    "prettier": "3.8.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.54.0",
+    "ws": "^8.19.0"
+  }
+}
