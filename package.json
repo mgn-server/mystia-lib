@@ -1,6 +1,6 @@
 {
   "name": "mystia",
-  "version": "0.0.0",
+  "version": "0.0.1-beta.1",
   "description": "Another Discord api wrapper",
   "keywords": [
     "discord api",
