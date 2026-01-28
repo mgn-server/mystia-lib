@@ -18,8 +18,6 @@ import {
   VoiceConnectionManager,
   VoiceConnection,
 } from "./structures/index.js";
-import path from "node:path";
-import { readdirSync } from "node:fs";
 
 export interface Events {
   debug: [message: string];
@@ -566,7 +564,11 @@ export class Client extends EventEmitter<Events> {
       resumeGatewayUrl: this.resumeGatewayUrl,
     };
   }
-  public handleCommands(dir: string) {
+  /**
+   * Moved to src/commands/loader.ts
+   */
+  /*
+  public async handleCommands(dir: string) {
     const foldersPath = path.join(__dirname, dir);
     const commandFolders = readdirSync(foldersPath);
     for (const folder of commandFolders) {
@@ -576,7 +578,7 @@ export class Client extends EventEmitter<Events> {
       );
       for (const file of commandFiles) {
         const filePath = path.join(commandsPath, file);
-        const command = require(filePath);
+        const command = await import(filePath);
 
         if ("data" in command && "execute" in command) {
           this.commands.set(command.data.name, command);
@@ -587,7 +589,7 @@ export class Client extends EventEmitter<Events> {
         }
       }
     }
-  }
+  }*/
 }
 
 /**

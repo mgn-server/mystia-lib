@@ -31,8 +31,9 @@
   },
   "scripts": {
     "build": "npm run lint && npm run format && tsc",
-    "lint": "eslint src/**/*",
-    "format": "prettier . --write"
+    "lint": "eslint src/*",
+    "format": "prettier . --write",
+    "lint:fix": "eslint src/* --fix"
   },
   "devDependencies": {
     "acorn": "^8.15.0",

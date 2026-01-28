@@ -408,7 +408,7 @@ export class CommandHandler {
     }
   }
 */
-// End of vibe code lines
+  // End of vibe code lines
   /**
    * Parse a message to check if it's a command
    * Useful for checking before handling

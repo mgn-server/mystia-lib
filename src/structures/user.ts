@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Snowflake } from "discord-api-types/globals";
 import { BaseStructure, Message, ChannelResolvable } from "./index.js";
 import {
