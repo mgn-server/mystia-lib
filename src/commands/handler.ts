@@ -301,6 +301,7 @@ export class CommandHandler {
     return Array.from(this.categories.keys());
   }
 
+  // Start of vibe coded coding (I was too lazy to think of things to implement)
   /**
    * Handle a message - NOVA FUNÇÃO MANUAL
    * O programador deve chamar isso explicitamente
@@ -407,6 +408,7 @@ export class CommandHandler {
     }
   }
 */
+// End of vibe code lines
   /**
    * Parse a message to check if it's a command
    * Useful for checking before handling
