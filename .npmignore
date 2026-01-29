@@ -1,16 +1,8 @@
 node_modules/
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-
-dist/
-build/
 coverage/
 .nyc_output/
 
 src/
-tsconfig.json
-tsconfig.*.json
 .tsbuildinfo
 
 .env
@@ -33,6 +25,3 @@ Thumbs.db
 *.swp
 .vscode/
 .idea/
-
-*.config.*
-.github
